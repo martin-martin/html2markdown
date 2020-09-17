@@ -239,8 +239,8 @@ def _markdownify(tag, _listType=None, _blockQuote=False, _listIndex=1):
 		# inline code
 		if children:
 			return
-		tag.insert_before('`` ')
-		tag.insert_after(' ``')
+		tag.insert_before('`')
+		tag.insert_after('`')
 		tag.unwrap()
 	elif _recursivelyValid(tag):
 		if tag.name == 'blockquote':
