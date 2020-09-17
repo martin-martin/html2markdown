@@ -319,8 +319,8 @@ def _markdownify(tag, _listType=None, _blockQuote=False, _listIndex=1):
 			tag.unwrap()
 			return
 		elif tag.name in ('strong','b'):
-			tag.insert_before('__')
-			tag.insert_after('__')
+			tag.insert_before('**')
+			tag.insert_after('**')
 			tag.unwrap()
 		elif tag.name in ('em','i'):
 			tag.insert_before('_')
